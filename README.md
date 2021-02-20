@@ -45,10 +45,8 @@ Describe any challenges encountered while building the app.
 
 
 
-
-<img src="https://i.imgur.com/TAUEVAb.gif"
- width=250><br>
-
+<img src="https://i.imgur.com/180Z2Si.gif
+" width=250><br>
 
 
 
