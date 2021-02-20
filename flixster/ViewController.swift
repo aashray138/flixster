@@ -88,6 +88,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //? is a swift optionals, like casting and creating a dictionary
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //get the new view controller using segue.destination
+        //pass the selectd object to the new view controller
+        print("Loading up details screen")
+        
+        //find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableview.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        //pass the selected movie to the details view controller
+        //casting segue to movie detail view controller
+        let detailViewController = segue.destination as! MovieDetailViewController
+        
+        detailViewController.movie = movie
+        
+        //when transitioning
+        tableview.deselectRow(at: indexPath, animated: true)
+    }
 
 
 }
