@@ -45,7 +45,7 @@ Describe any challenges encountered while building the app.
 
 
 
-<img src="https://i.imgur.com/180Z2Si.gif
+<img src="https://i.imgur.com/LyzaIR1.gif
 " width=250><br>
 
 
